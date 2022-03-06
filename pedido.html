@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastemic</title>
+</head>
+<body>
+    <img src="./img/pas.png" alt="logo pastemic" width="550 px">
+    <hr>
+    <table>
+        <tr>
+            <th><a href="./menu.html">Menú</a></th>
+            <th>------</th>
+            <th><a href="./pedido.html">Pedido</a></th>
+            <th>------</th>
+            <th><a href="./contacto.html">Contacto</a></th>
+            <th>------</th>
+            <th><a href="./Cantidades.html">Pastelero Cantidades</a></th>
+            <th>------</th>
+            <th><a href="./PedidosRealizados.html">Pastelero Pedidos Realizados</a></th>
+        </tr>
+
+    </table>
+
+    <hr>
+    <h1>Pedido</h1>
+    <!--para elegir número de pasteles-->
+    <label for="numpas">¿Cuántos pasteles gusta ordenar?</label>
+    <input type="number" name="numpas" id="numpas" placeholder="1">
+
+    <!--para elegir  sabor de pasteles-->
+    <p>¿De qué sabor(es)?    </p>
+    <input type="checkbox" id="topping1" name="topping1" value="Vainilla">
+    <label for="topping1">Vainilla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Frutas">
+    <label for="topping2">Frutas</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Trufa y moka">
+    <label for="topping3">Trufa y moka</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Cheesecake">
+    <label for="topping4">Cheesecake</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="Manzana">
+    <label for="topping5">Manzana</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Zanahoria">
+    <label for="topping6">Zanahoria</label><br>
+    <input type="checkbox" id="topping7" name="topping7" value="Tres leches">
+    <label for="topping7">Tres leches</label><br>
+    <input type="checkbox" id="topping8" name="topping8" value="Chocolate">
+    <label for="topping8">Chocolate</label><br>
+    <input type="checkbox" id="topping9" name="topping9" value="Limón">
+    <label for="topping9">Limón</label><br>
+
+    <!--para elegir  los adornos-->
+    <p>¿Con qué adorno(s)?    </p>
+    <input type="checkbox" id="topping1" name="topping1" value="Flores">
+    <label for="topping1">Flores</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Contornos">
+    <label for="topping2">Contornos</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Efecto de derretido">
+    <label for="topping3">Efecto de derretido</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Puntos">
+    <label for="topping4">Puntos</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="Nombre">
+    <label for="topping5">Nombre</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Velas">
+    <label for="topping6">Velas</label><br>
+
+
+    <!--para elegir  ingresar datos-->
+    <h2>Proporcione sus datos por favor</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="tel1">Teléfono:</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+        <label for="correo1">Correo: electrónico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+
+        <label for="desc1">Descripción general del pastel</label><br>
+        <textarea rows="10" cols="30" name="desc1" wrap="hard"></textarea><br><br>
+        
+        <label for="sabores">Selección de sabores y adornos</label><br>
+        <textarea rows="10" cols="30" name="sabores" wrap="hard"></textarea><br><br>
+
+        <!--botones de reset y enviar-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todo">
+    </form>
+
+</body>
+</html>
